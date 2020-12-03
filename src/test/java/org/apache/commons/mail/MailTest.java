@@ -1,5 +1,7 @@
 package org.apache.commons.mail;
 
+import java.util.Date;
+
 import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
@@ -27,7 +29,7 @@ public class MailTest extends TestCase{
 
     @Test
     public void testSetSubject() {
-        System.out.printlin("MailTest.java: This test should set the subject.");
+        System.out.println("MailTest.java: This test should set the subject.");
         System.out.println("gdpXXX");
         testEmail.setSubject("Hello");
         assertEquals("Hello", testEmail.getSubject());

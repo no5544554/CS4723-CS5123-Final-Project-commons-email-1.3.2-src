@@ -1,5 +1,8 @@
 package org.apache.commons.mail;
 
+import java.net.URL;
+import java.net.MalformedURLException;
+
 import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
@@ -26,7 +29,7 @@ public class EmailAttachmentTest extends TestCase{
     }
 
     @Test
-    public void testSetURL() {
+    public void testSetURL() throws MalformedURLException{
         System.out.println("EmailAttachmentTest: This test attempts to set the attachment's URL");
         System.out.println("gdpXXX");
         testEmailAttachment.setURL(new URL("https://www.dotcom.com"));
